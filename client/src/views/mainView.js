@@ -44,7 +44,6 @@ const MainView = (props) => {
                 <thead style={{backgroundColor: "lightgray", color: "white"}}>
                     <th>Pet Name: </th>
                     <th>Pet Type: </th>
-                    <th>Pet Skills: </th>
                     <th>Pet Description: </th>
                 </thead>
                 <tbody>
@@ -53,7 +52,6 @@ const MainView = (props) => {
                             <tr key={i}>
                                 <td>{pet.petName}</td>
                                 <td>{pet.petType}</td>
-                                <td>{pet.petSkills}</td>
                                 <td>{pet.petDescription}</td>
                                 <td>
                                     <button onClick={()=>{navigate(`/pets/${pet._id}`)}}>Details</button>
